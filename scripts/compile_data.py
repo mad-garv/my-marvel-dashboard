@@ -42,13 +42,14 @@ for filename, info in SOURCE_FILES.items():
                 "category": info["category"],
                 "group": row.get("Group", ""),
                 "media_type": info["media_type"],
+                "release_date": row["Release Date"],
             })
 
 # Sort alphabetically by category
 rows.sort(key=lambda row: row["category"].lower())
 
 with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as file:
-    fieldnames = ["tmdbID", "category", "group", "media_type"]
+    fieldnames = ["tmdbID", "category", "group", "media_type", "release_date"]
 
     writer = csv.DictWriter(file, fieldnames=fieldnames)
 

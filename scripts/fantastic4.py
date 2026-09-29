@@ -45,7 +45,8 @@ def save_fantastic_four_movies():
         movies.append({
             "TMDB ID": movie.get("id"),
             "Title": movie.get("title"),
-            "Release Date": movie.get("release_date")
+            "Release Date": movie.get("release_date"),
+            "Group": "Fantastic 4"
         })
 
         print(
@@ -71,7 +72,8 @@ def save_fantastic_four_movies():
             fieldnames=[
                 "TMDB ID",
                 "Title",
-                "Release Date"
+                "Release Date",
+                "Group"
             ]
         )
 

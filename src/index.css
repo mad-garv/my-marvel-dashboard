@@ -2,6 +2,210 @@
   box-sizing: border-box;
 }
 
+html {
+  background: #080808;
+}
+
 body {
   margin: 0;
+  min-width: 320px;
+  background: #080808;
+  color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 0 80px;
+}
+
+/* =========================
+ CATEGORY CAROUSEL
+ ========================= */
+
+.category-carousel {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+
+  width: 100%;
+  padding: 25px 50vw;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+}
+
+.category-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.category {
+  flex: 0 0 auto;
+
+  border: none;
+  background: none;
+  color: #777;
+
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  cursor: pointer;
+  white-space: nowrap;
+
+  scroll-snap-align: center;
+
+  opacity: 0.45;
+  transform: scale(0.8);
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease,
+    color 0.3s ease;
+}
+
+.category:hover {
+  color: #bbb;
+  opacity: 0.75;
+}
+
+.category.active {
+  color: #f5f5f5;
+  opacity: 1;
+  transform: scale(1.5);
+}
+
+/* =========================
+ CONTENT AREA
+ ========================= */
+
+.dashboard-content {
+  width: min(1400px, 92%);
+  margin: 60px auto 0;
+}
+
+.selected-category {
+  margin: 0 0 40px;
+  text-align: center;
+
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+/* =========================
+ MOBILE
+ ========================= */
+
+@media (max-width: 700px) {
+  .app {
+    padding-top: 25px;
+  }
+
+  .category-carousel {
+    gap: 28px;
+    padding: 25px 50vw;
+  }
+
+  .category {
+    font-size: 1.2rem;
+  }
+
+  .category.active {
+    transform: scale(1.35);
+  }
+
+  .dashboard-content {
+    width: 90%;
+    margin-top: 45px;
+  }
+
+  .selected-category {
+    font-size: 2rem;
+  }
+}
+
+/* =========================
+   GROUPS
+   ========================= */
+
+   .groups {
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+
+.group {
+    width: 100%;
+}
+
+.group-title {
+    margin: 0 0 20px;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* =========================
+   CONTENT CAROUSEL
+   ========================= */
+
+.content-carousel {
+    display: flex;
+    gap: 18px;
+
+    overflow-x: auto;
+    padding-bottom: 15px;
+
+    scrollbar-width: none;
+}
+
+.content-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+/* =========================
+   CONTENT CARD
+   ========================= */
+
+.content-card {
+    flex: 0 0 180px;
+}
+
+.content-card-placeholder {
+    width: 180px;
+    aspect-ratio: 2 / 3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #1a1a1a;
+    border-radius: 8px;
+
+    color: #777;
+    font-size: 1.5rem;
+}
+
+.content-card h3 {
+    margin: 10px 0 3px;
+    font-size: 1rem;
+}
+
+.content-card p {
+    margin: 0;
+    color: #777;
+    font-size: 0.85rem;
 }

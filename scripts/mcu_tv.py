@@ -25,7 +25,7 @@ def save_mcu_shows_to_csv():
     with open(filename, mode="w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
     
-        writer.writerow(["TMDB ID", "Title", "Release Date"])
+        writer.writerow(["TMDB ID", "Title", "Release Date", "Group"])
         
         show_count = 0
         
@@ -47,8 +47,9 @@ def save_mcu_shows_to_csv():
                 show_id = item.get("id")
                 title = item.get("name")
                 release_date = item.get("first_air_date")
+                group = "Diney+ Era"
 
-                writer.writerow([show_id, title, release_date])
+                writer.writerow([show_id, title, release_date, group])
                 show_count += 1
                 
             print(f"Saved page {params['page']} of {data.get('total_pages', 1)}...")

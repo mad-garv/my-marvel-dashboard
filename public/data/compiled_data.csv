@@ -1,86 +1,86 @@
-tmdbID,category,group,media_type
-9738,Fantastic Four,,movie
-1979,Fantastic Four,,movie
-166424,Fantastic Four,,movie
-617126,Fantastic Four,,movie
-1403,Marvel Television,ABC,tv
-61550,Marvel Television,ABC,tv
-61889,Marvel Television,Netflix,tv
-38472,Marvel Television,Netflix,tv
-62126,Marvel Television,Netflix,tv
-69088,Marvel Television,Other,tv
-62127,Marvel Television,Netflix,tv
-62285,Marvel Television,Netflix,tv
-68716,Marvel Television,ABC,tv
-67178,Marvel Television,Netflix,tv
-66190,Marvel Television,Other,tv
-1726,MCU,Phase 1,movie
-1724,MCU,Phase 1,movie
-10138,MCU,Phase 1,movie
-10195,MCU,Phase 1,movie
-1771,MCU,Phase 1,movie
-24428,MCU,Phase 1,movie
-68721,MCU,Phase 2,movie
-76338,MCU,Phase 2,movie
-100402,MCU,Phase 2,movie
-118340,MCU,Phase 2,movie
-99861,MCU,Phase 2,movie
-102899,MCU,Phase 2,movie
-271110,MCU,Phase 3,movie
-284052,MCU,Phase 3,movie
-283995,MCU,Phase 3,movie
-315635,MCU,Phase 3,movie
-284053,MCU,Phase 3,movie
-284054,MCU,Phase 3,movie
-299536,MCU,Phase 3,movie
-363088,MCU,Phase 3,movie
-299537,MCU,Phase 3,movie
-299534,MCU,Phase 3,movie
-429617,MCU,Phase 3,movie
-497698,MCU,Phase 4,movie
-566525,MCU,Phase 4,movie
-524434,MCU,Phase 4,movie
-634649,MCU,Phase 4,movie
-453395,MCU,Phase 4,movie
-616037,MCU,Phase 4,movie
-505642,MCU,Phase 4,movie
-640146,MCU,Phase 5,movie
-447365,MCU,Phase 5,movie
-609681,MCU,Phase 5,movie
-533535,MCU,Phase 5,movie
-822119,MCU,Phase 5,movie
-986056,MCU,Phase 5,movie
-617126,MCU,Phase 6,movie
-969681,MCU,Phase 6,movie
-1003596,MCU,Phase 6,movie
-85271,MCU Television,,tv
-88396,MCU Television,,tv
-84958,MCU Television,,tv
-91363,MCU Television,,tv
-88329,MCU Television,,tv
-92749,MCU Television,,tv
-92782,MCU Television,,tv
-232125,MCU Television,,tv
-92783,MCU Television,,tv
-114472,MCU Television,,tv
-122226,MCU Television,,tv
-138501,MCU Television,,tv
-202555,MCU Television,,tv
-114471,MCU Television,,tv
-241388,MCU Television,,tv
-138505,MCU Television,,tv
-198178,MCU Television,,tv
-213375,MCU Television,,tv
-36657,X-Men,X-MEN,movie
-36658,X-Men,X-MEN,movie
-36668,X-Men,X-MEN,movie
-2080,X-Men,DEADPOOL&WOLVERINE,movie
-49538,X-Men,X-MEN,movie
-76170,X-Men,DEADPOOL&WOLVERINE,movie
-127585,X-Men,X-MEN,movie
-293660,X-Men,DEADPOOL&WOLVERINE,movie
-246655,X-Men,X-MEN,movie
-263115,X-Men,DEADPOOL&WOLVERINE,movie
-383498,X-Men,DEADPOOL&WOLVERINE,movie
-320288,X-Men,X-MEN,movie
-533535,X-Men,DEADPOOL&WOLVERINE,movie
+tmdbID,category,group,media_type,release_date
+9738,Fantastic Four,Fantastic 4,movie,2005-06-29
+1979,Fantastic Four,Fantastic 4,movie,2007-06-13
+166424,Fantastic Four,Fantastic 4,movie,2015-08-05
+617126,Fantastic Four,Fantastic 4,movie,2025-07-23
+1403,Marvel Television,ABC,tv,2013-09-24
+61550,Marvel Television,ABC,tv,2015-01-06
+61889,Marvel Television,Netflix,tv,2015-04-10
+38472,Marvel Television,Netflix,tv,2015-11-20
+62126,Marvel Television,Netflix,tv,2016-09-30
+69088,Marvel Television,Other,tv,2016-12-13
+62127,Marvel Television,Netflix,tv,2017-03-17
+62285,Marvel Television,Netflix,tv,2017-08-18
+68716,Marvel Television,ABC,tv,2017-09-29
+67178,Marvel Television,Netflix,tv,2017-11-17
+66190,Marvel Television,Other,tv,2018-06-07
+1726,MCU,Phase 1,movie,2008-04-30
+1724,MCU,Phase 1,movie,2008-06-12
+10138,MCU,Phase 1,movie,2010-04-28
+10195,MCU,Phase 1,movie,2011-04-21
+1771,MCU,Phase 1,movie,2011-07-22
+24428,MCU,Phase 1,movie,2012-04-25
+68721,MCU,Phase 2,movie,2013-04-18
+76338,MCU,Phase 2,movie,2013-10-30
+100402,MCU,Phase 2,movie,2014-03-20
+118340,MCU,Phase 2,movie,2014-07-30
+99861,MCU,Phase 2,movie,2015-04-22
+102899,MCU,Phase 2,movie,2015-07-14
+271110,MCU,Phase 3,movie,2016-04-27
+284052,MCU,Phase 3,movie,2016-10-25
+283995,MCU,Phase 3,movie,2017-04-25
+315635,MCU,Phase 3,movie,2017-07-05
+284053,MCU,Phase 3,movie,2017-10-02
+284054,MCU,Phase 3,movie,2018-02-13
+299536,MCU,Phase 3,movie,2018-04-25
+363088,MCU,Phase 3,movie,2018-07-04
+299537,MCU,Phase 3,movie,2019-03-06
+299534,MCU,Phase 3,movie,2019-04-24
+429617,MCU,Phase 3,movie,2019-06-28
+497698,MCU,Phase 4,movie,2021-07-07
+566525,MCU,Phase 4,movie,2021-09-01
+524434,MCU,Phase 4,movie,2021-11-03
+634649,MCU,Phase 4,movie,2021-12-15
+453395,MCU,Phase 4,movie,2022-05-04
+616037,MCU,Phase 4,movie,2022-07-06
+505642,MCU,Phase 4,movie,2022-11-09
+640146,MCU,Phase 5,movie,2023-02-15
+447365,MCU,Phase 5,movie,2023-05-03
+609681,MCU,Phase 5,movie,2023-11-08
+533535,MCU,Phase 5,movie,2024-07-24
+822119,MCU,Phase 5,movie,2025-02-12
+986056,MCU,Phase 5,movie,2025-04-30
+617126,MCU,Phase 6,movie,2025-07-23
+969681,MCU,Phase 6,movie,2026-07-29
+1003596,MCU,Phase 6,movie,2026-12-15
+85271,MCU Television,Diney+ Era,tv,2021-01-15
+88396,MCU Television,Diney+ Era,tv,2021-03-19
+84958,MCU Television,Diney+ Era,tv,2021-06-09
+91363,MCU Television,Diney+ Era,tv,2021-08-11
+88329,MCU Television,Diney+ Era,tv,2021-11-24
+92749,MCU Television,Diney+ Era,tv,2022-03-30
+92782,MCU Television,Diney+ Era,tv,2022-06-08
+232125,MCU Television,Diney+ Era,tv,2022-08-10
+92783,MCU Television,Diney+ Era,tv,2022-08-18
+114472,MCU Television,Diney+ Era,tv,2023-06-21
+122226,MCU Television,Diney+ Era,tv,2024-01-09
+138501,MCU Television,Diney+ Era,tv,2024-09-18
+202555,MCU Television,Diney+ Era,tv,2025-03-04
+114471,MCU Television,Diney+ Era,tv,2025-06-24
+241388,MCU Television,Diney+ Era,tv,2025-08-01
+138505,MCU Television,Diney+ Era,tv,2025-09-24
+198178,MCU Television,Diney+ Era,tv,2026-01-27
+213375,MCU Television,Diney+ Era,tv,2026-10-14
+36657,X-Men,X-MEN,movie,2000-07-13
+36658,X-Men,X-MEN,movie,2003-04-27
+36668,X-Men,X-MEN,movie,2006-05-24
+2080,X-Men,DEADPOOL&WOLVERINE,movie,2009-04-28
+49538,X-Men,X-MEN,movie,2011-06-01
+76170,X-Men,DEADPOOL&WOLVERINE,movie,2013-07-24
+127585,X-Men,X-MEN,movie,2014-05-15
+293660,X-Men,DEADPOOL&WOLVERINE,movie,2016-02-09
+246655,X-Men,X-MEN,movie,2016-05-18
+263115,X-Men,DEADPOOL&WOLVERINE,movie,2017-02-28
+383498,X-Men,DEADPOOL&WOLVERINE,movie,2018-05-15
+320288,X-Men,X-MEN,movie,2019-06-05
+533535,X-Men,DEADPOOL&WOLVERINE,movie,2024-07-24
