@@ -50,9 +50,7 @@ function App() {
       <main className="dashboard-content">
         {selectedCategory && (
           <>
-            <h1 className="selected-category">
-              {selectedCategory}
-            </h1>
+
 
             <div className="groups">
               {getGroups(data, selectedCategory).map(group => (

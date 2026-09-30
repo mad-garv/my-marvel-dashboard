@@ -1,35 +1,90 @@
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 
 function CategoryCarousel({
     categories,
     selectedCategory,
     onSelectCategory,
 }) {
+    const [currentIndex, setCurrentIndex] = useState(
+        categories.indexOf(selectedCategory)
+    )
+
     const carouselRef = useRef(null)
 
     useEffect(() => {
-        const selectedElement = carouselRef.current?.querySelector(".category.active")
+        const carousel = carouselRef.current
 
-        if (selectedElement) {
-            selectedElement.scrollIntoView({
-                behavior: "smooth",
-                inline: "center",
-                block: "nearest",
+        if (!carousel) return
+
+        function updateCurrentCategory() {
+            const slides =
+                carousel.querySelectorAll(".category-item")
+
+            const carouselCenter =
+                carousel.getBoundingClientRect().left +
+                carousel.offsetWidth / 2
+
+            let closestIndex = 0
+            let closestDistance = Infinity
+
+            slides.forEach((slide, index) => {
+                const rect = slide.getBoundingClientRect()
+
+                const slideCenter =
+                    rect.left + rect.width / 2
+
+                const distance = Math.abs(
+                    slideCenter - carouselCenter
+                )
+
+                if (distance < closestDistance) {
+                    closestDistance = distance
+                    closestIndex = index
+                }
             })
+
+            setCurrentIndex(closestIndex)
+
+            onSelectCategory(categories[closestIndex])
         }
-    }, [selectedCategory])
+
+        carousel.addEventListener(
+            "scroll",
+            updateCurrentCategory
+        )
+
+        updateCurrentCategory()
+
+        return () => {
+            carousel.removeEventListener(
+                "scroll",
+                updateCurrentCategory
+            )
+        }
+    }, [categories, onSelectCategory])
 
     return (
-        <div className="category-carousel" ref={carouselRef}>
-            {categories.map(category => (
+        <div
+            className="category-carousel"
+            ref={carouselRef}
+        >
+            {categories.map((category, index) => (
                 <button
+                    className={`category-item ${
+                        index === currentIndex
+                            ? "current"
+                            : ""
+                    }`}
                     key={category}
-                    className={
-                        category === selectedCategory
-                            ? "category active"
-                            : "category"
-                    }
-                    onClick={() => onSelectCategory(category)}
+                    onClick={() => {
+                        const slide = carouselRef.current?.children[index]
+                    
+                        slide?.scrollIntoView({
+                            behavior: "smooth",
+                            inline: "center",
+                            block: "nearest",
+                        })
+                    }}
                 >
                     {category}
                 </button>
