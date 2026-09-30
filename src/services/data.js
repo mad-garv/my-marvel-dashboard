@@ -1,5 +1,7 @@
 export async function getCompiledData() {
-    const response = await fetch("/data/compiled_data.csv")
+    const response = await fetch(
+        `${import.meta.env.BASE_URL}data/compiled_data.csv`
+    )
 
     if (!response.ok) {
         throw new Error("Failed to load compiled data")
