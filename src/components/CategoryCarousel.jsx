@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react"
+import categoryConfig from "../data/categoryConfig"
 
 function CategoryCarousel({
     categories,
@@ -70,15 +71,14 @@ function CategoryCarousel({
         >
             {categories.map((category, index) => (
                 <button
-                    className={`category-item ${
-                        index === currentIndex
-                            ? "current"
-                            : ""
-                    }`}
+                    className={`category-item ${index === currentIndex
+                        ? "current"
+                        : ""
+                        }`}
                     key={category}
                     onClick={() => {
                         const slide = carouselRef.current?.children[index]
-                    
+
                         slide?.scrollIntoView({
                             behavior: "smooth",
                             inline: "center",
@@ -86,7 +86,10 @@ function CategoryCarousel({
                         })
                     }}
                 >
-                    {category}
+                    <img
+                        src={`${import.meta.env.BASE_URL}${categoryConfig[category]?.logo}`}
+                        alt={category}
+                    />
                 </button>
             ))}
         </div>
